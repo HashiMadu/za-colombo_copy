@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>top</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+    <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__inner">
+
+
+            <div class="header__contain">
+                <a href="/">
+                    <img src="./image/yaka.svg" alt="ザ・コロンボ Logo" class="header__logo">
+                    <h1 class="header__name">ザ。コロンボ</h1>
+                </a>
+            </div>
+
+
+            <nav class="header__nav">
+                <div class="header__langswitcher">
+                    <a href="" class="lang__enfrist">EN</a>
+                    <a href="" class="lang__jafrist">JA</a>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__headitem"><a href="./mainmenu_1.html">メニュー</a></li>
+                    <li class="nav__headitem"><a href="./">店について</a></li>
+                    <li class="nav__headitem"><a href="./description.html">詳細</a></li>
+                    <!-- <li class="nav__headitem"><a href="./contact.html">お問い合わせ</a></li> -->
+                </ul>
+            </nav>
+
+            <div class="toggle__btn">
+                <i class="fa-solid fa-bars fa-beat-fade" style="color: #ffcb0f;"></i>
+
+            </div>
+
+            <div class="dropdown__menu">
+                <ul>
+                    <li class="nav__headitem"><a href="./mainmenu_1.html">メニュー</a></li>
+                    <li class="nav__headitem"><a href="./">店について</a></li>
+                    <li class="nav__headitem"><a href="./description.html">詳細</a></li>
+                    <!-- <li class="nav__headitem"><a href="./contact.html">お問い合わせ</a></li> -->
+                    <li class="nav__header__item">
+                        <div class="header__lang-switcher">
+                            <a href="" class="lang__en">EN</a>
+                            <a href="" class="lang__ja">JA</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle__btn');
+        const toggleBtnIcon = document.querySelector('.toggle__btn i');
+        const dropDownMenu = document.querySelector('.dropdown__menu');
+
+        toggleBtn.onclick = function () {
+            // "onclick"
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark '
+                : 'fa-solid fa-bars'; // Change back to "bars" when menu is closed
+        };
+
+
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+    <main class="main">
+
+        <section class="firstview">
+            <video autoplay muted loop id="myVideo">
+                <source src="./image/newvideo _1.mp4" type="video/mp4">
+            </video>
+
+        </section>
+
+
+
+
+        <section class="information">
+
+
+            <h2 class="information__name">店について</h2>
+
+
+
+            <div class="information__inner">
+
+                <div class="information__info">
+
+
+                    <p class="information__description">
+                        スリランカの活気に満ちた豊かな味わいをここ日本で体験してください。<br>
+                        私たちの料理は、スリランカ料理 – インド料理と同じくらい大胆でスパイシーな料理。<br>
+                        しかし、地中の軽やかさのユニークなひねりが加えられています。<br>
+                        ZA コロンボは、心地よく忘れられない美食の旅を提供します。
+                    </p>
+
+                </div>
+
+                <div class="information__image">
+                    <img src="./image/Sri-Lanka-World-Map-300x300.png" alt="Sri Lanka Map" class="">
+
+
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+        <div class="margin"></div>
+
+        <section class="text">
+            <div class="text__inner">
+                <h1 class="text__name">sri lanakn food in nagoya</h1>
+            </div>
+        </section>
+        <div class="margin"></div>
+
+
+
+
+
+
+
+        <section class="recom">
+            <div class="recom__sideimage">
+                <img src="./image/cenmon_1.png" alt="">
+            </div>
+
+            <div class="recom__inner">
+
+
+                <h2 class="recom__name">おすすめ</h2>
+
+
+
+                <article class="recom__item">
+                    <!-- <p class="recom__number">1</p> -->
+                    <div class="recom__content">
+                        <div class="recom__info">
+                            <p class="recom__minititle">アーユルヴェーダ</p>
+
+                            <h3 class="recom__title">スペシャル　セット</h3>
+
+                            <p class="recom__text">
+                                10種類以上のカレーを彩り鮮やかなターメリックライスと目玉焼きとともに楽しめるセットです。</p>
+                            <p class="recom__text">
+                                アーユルヴェーダの伝統に基づいたスパイスと新鮮な食材を使用。サラダとセイロンティー、ホットコーヒー、スパイスティーなどの選べるドリンク付きで、バランスの取れた満足感のある一品です
+                            </p>
+
+                        </div>
+                        <div class="recom__image"><img src="./image/ayuruweda/IMG_8101 1.png" alt="">
+                        </div>
+                </article>
+
+
+                <article class="recom__item">
+                    <!-- <p class="recom__number">2</p> -->
+
+
+                    <div class="recom__content">
+                        <div class="recom__info">
+                            <p class="recom__minititle">アーユルヴェーダ</p>
+
+                            <h3 class="recom__title">ワンプレート</h3>
+
+                            <p class="recom__text">
+                                こちらの「アーユルヴェーダ
+                                ワンプレート」は、体に優しいヘルシーな一皿です。日替わりの特製カレーは、100%オーガニックのスパイスを使用しており、スパイス本来の風味と香りが楽しめます。
+                            <p class="recom__text">
+                                プレートには、彩り豊かなサラダやドリンクがセットになっており、バランスの取れた食事が提供されます。特に、目玉焼きをトッピングしたライスが食欲をそそり、異国情緒あふれる味わいを堪能できます
+                            </p>
+                            <!-- <p class="recom__spices">
+                                        ターメリック（ウコン）,カレーパウダー（スリランカ風） ,チリパウダー ,クミンシード
+                                        またはパウダー,コリアンダーパウダー,マスタードシード,フェヌグリークシード
+                                        ,シナモン
+                                        ,クローブ,パンダンリーフ（ランペ）,カレーリーフ,ジンジャーとガーリック
+                                        ,ブラックペッパまたはパウダー,コリアンダーパウダー,マスタードシード,フェヌグリークシード
+                                        ,シナモン
+                                        ,クローブ,パンダンリーフ（ランペ）,カレーリーフ,ジンジャーとガーリック ,ブラックペッパ
+                                    </p> -->
+                        </div>
+                        <div class="recom__image"><img src="./image/ayuruweda/IMG_8265.jpg" alt="">
+                        </div>
+                </article>
+
+
+                <article class="recom__item">
+                    <!-- <p class="recom__number">3</p> -->
+                    <div class="recom__content">
+                        <div class="recom__info">
+                            <p class="recom__minititle">アーユルヴェーダ</p>
+
+                            <h3 class="recom__title">ランプ スペシャル ライス</h3>
+
+                            <p class="recom__text">
+                                10種類以上のカレーを彩り鮮やかなターメリックライスと目玉焼きとともに楽しめるセットです。アーユルヴェーダの伝統に基づいたスパイスと新鮮な食材を使用。サラダとセイロンティー、ホットコーヒー、スパイスティーなどの選べるドリンク付きで、バランスの取れた満足感のある一品です。
+                            </p>
+
+                        </div>
+                        <div class="recom__image"><img src="./image/ayuruweda/IMG_8232.jpg" alt="">
+                        </div>
+                </article>
+
+
+                <article class="recom__item">
+                    <!-- <p class="recom__number">4</p> -->
+                    <div class="recom__content">
+                        <div class="recom__info">
+                            <p class="recom__minititle">アーユルヴェーダ</p>
+
+                            <h3 class="recom__title">ワンプレート</h3>
+
+                            <p class="recom__text">
+                                こちらの「アーユルヴェーダ
+                                ワンプレート」は、体に優しいヘルシーな一皿です。日替わりの特製カレーは、100%オーガニックのスパイスを使用しており、スパイス本来の風味と香りが楽しめます。プレートには、彩り豊かなサラダやドリンクがセットになっており、バランスの取れた食事が提供されます。特に、目玉焼きをトッピングしたライスが食欲をそそり、異国情緒あふれる味わいを堪能できます
+                            </p>
+                            <!-- <p class="recom__spices">
+                                        ターメリック（ウコン）,カレーパウダー（スリランカ風） ,チリパウダー ,クミンシード
+                                        またはパウダー,コリアンダーパウダー,マスタードシード,フェヌグリークシード
+                                        ,シナモン
+                                        ,クローブ,パンダンリーフ（ランペ）,カレーリーフ,ジンジャーとガーリック
+                                        ,ブラックペッパまたはパウダー,コリアンダーパウダー,マスタードシード,フェヌグリークシード
+                                        ,シナモン
+                                        ,クローブ,パンダンリーフ（ランペ）,カレーリーフ,ジンジャーとガーリック ,ブラックペッパ
+                                    </p> -->
+                        </div>
+                        <div class="recom__image"><img src="./image/ayuruweda/名称未設定のデザイン.jpg" alt="">
+                        </div>
+                </article>
+
+
+                <a class="btn" href="description.html#spices__info">使用スパイスの詳細</a>
+            </div>
+        </section>
+
+
+
+
+        <section class="inside">
+
+            <div class="inside__backpic">
+
+                <img src="./image/cupoftea.png" alt="">
+
+
+            </div>
+
+            <div class="inside__inner">
+                <h2 class="recom__name">お席のご案内</h2>
+
+
+                <div class="inside__main">
+                    <p class="inside__text">
+                        当店には、2名様掛けと4名様掛けのテーブル席をご用意しています。また、人数に応じて貸切も可能ですので、大人数での集まりにも最適です。さらに、一人飲みにぴったりなカウンター席も4席ご用意しています。お仕事終わりや、気軽に一杯飲みたい時にぜひご利用ください。
+                    </p>
+                </div>
+
+                <div class="inside__map">
+                    <p class="inside__minititle">
+                        こんな時に
+                    </p>
+                    <nav class="inside__nav">
+                        <ul class="nav__inlist">
+                            <li class="nav__inside">デート</li>
+                            <li class="nav__inside">宴会</li>
+                            <li class="nav__inside">会社帰りの一杯</li>
+                            <li class="nav__inside">ご家族でのお食事</li>
+                        </ul>
+                    </nav>
+
+                </div>
+
+                <ul class="inside__pic">
+                    <li class="insideroom"><img src="./image/insidemapo_2.png" alt="inside"></li>
+
+                    <li class="insidemap"><img src="./image/newshop.png" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="insta">
+            <!-- <div class="insta__bookmarkpic">
+                <img src="./image/AdobeStock_906547252_Preview 1.png" alt="">
+            </div> -->
+            <div class="insta__inner">
+                <h2 class="recom__name">Instagram</h2>
+
+                <div class="insta__list">
+                    <div class="insta__pic">
+                        <img class="insta__minipic" src="./image/insta /IMG_8615.JPG" alt="">
+                        <img class="insta__minipic" src="./image/insta /IMG_8616.JPG" alt="">
+                        <img class="insta__minipic" src="./image/insta /IMG_8617.JPG" alt="">
+                        <img class="insta__minipic" src="./image/insta /IMG_8618.JPG" alt="">
+                        <img class="insta__minipic" src="./image/insta /IMG_8619.JPG" alt="">
+                        <img class="insta__minipic" src="./image/insta /IMG_8620.JPG" alt="">
+                        <img class="insta__minipic" src="./image/insta /IMG_8621.JPG" alt="">
+                        <img class="insta__minipic" src="./image/insta /IMG_8622.JPG" alt="">
+                        <img class="insta__minipic" src="./image/insta /IMG_8624.JPG" alt="">
+
+                    </div>
+                </div>
+
+                <a class="btn__insta" href="">See More</a>
+                <div class="insta__bottompic">
+                    <img src="./image/Frame_down.png" alt="">
+                </div>
+
+
+
+
+            </div>
+        </section>
+
+
+        <section class="news">
+
+            <div class="news__inner">
+
+                <div class="news__mainname">
+                    <h2 class="news__name">NEWS</h2>
+                </div>
+
+                <div class="news__list">
+
+                    <article class="news__item">
+                        <img class="news__pic" src="./image/news/IMG_8559 2.JPG" alt="">
+                        <p class="news__date">2024.12.29</p>
+                    </article>
+
+                    <article class="news__item">
+                        <img class="news__pic" src="./image/news/IMG_8557 3.JPG" alt="">
+                        <p class="news__date">2024.12.29</p>
+                    </article>
+
+                    <article class="news__item">
+                        <img class="news__pic" src="./image/news/IMG_8557 4.JPG" alt="">
+                        <p class="news__date">2024.12.29</p>
+
+                    </article>
+
+
+
+                </div>
+
+                <!-- <a class="btn__news" href="">more news</a> -->
+            </div>
+        </section>
+
+
+        <section class="map">
+            <div class="map__inner">
+                <h2 class="map__title">INFORMATION</h2>
+                <div class="map__details">
+                    <div class="map__left">
+                        <dl class="map__item">
+                            <dt class="map__name">場所</dt>
+                            <dd class="map__info">塚本ビル 1階 愛知県名古屋市中区大須 2丁目1-41 460-0011</dd>
+                        </dl>
+                        <dl class="map__item">
+                            <dt class="map__name">営業時間</dt>
+                            <dd class="map__info">11 AM–11 PM</dd>
+                        </dl>
+                        <dl class="map__item">
+                            <dt class="map__name">定休日</dt>
+                            <dd class="map__info">月曜日</dd>
+                        </dl>
+                        <dl class="map__item">
+                            <dt class="map__name">駐車場</dt>
+                            <dd class="map__info">なし</dd>
+                        </dl>
+                    </div>
+
+                    <div class="map__right">
+                        <dl class="map__item">
+                            <dt class="map__name">アクセス</dt>
+                            <dd class="map__info">hdhsakdjsakdjsl</dd>
+                        </dl>
+                        <dl class="map__item">
+                            <dt class="map__name">総席数</dt>
+                            <dd class="map__info">12</dd>
+                        </dl>
+                        <dl class="map__item">
+                            <dt class="map__name">電子マネー</dt>
+                            <dd class="map__info">可</dd>
+                        </dl>
+                        <dl class="map__item">
+                            <dt class="map__name">クレジットカード</dt>
+                            <dd class="map__info">可</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="true__map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.796468695431!2d136.8985786!3d35.161696400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600377e702d4dae5%3A0x3839677d5c7d1571!2sZA%20COLOMBO!5e0!3m2!1sen!2sjp!4v1734690965229!5m2!1sen!2sjp"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__main">
+                <div class="footer__contain">
+                    <h1 class="footer__name">ザ。コロンボ</h1>
+                    <hr class="footer__line"> <!-- Added horizontal line -->
+                    <img src="./image/yaka.svg" alt="ザ・コロンボ Logo" class="footer__logo">
+                </div>
+
+                <nav class="footer__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="./mainmenu_1.html">メニュー</a></li>
+                        <li class="nav__item"><a href="">店について</a></li>
+                        <li class="nav__item"><a href="./description.html">詳細</a></li>
+                        <!-- <li class="nav__item"><a href="">お問い合わせ</a></li> -->
+                    </ul>
+                </nav>
+
+                <nav class="icon__nav">
+                    <ul class="icon__list">
+                        <li class="icon__item"><a href=""><img src="./image/facebook_5968764.png" alt="Facebook"></a>
+                        </li>
+                        <li class="icon__item"><a href=""><img src="./image/instagram_2111463.png" alt="Instagram"></a>
+                        </li>
+                        <li class="icon__item"><a href=""><img src="./image/social-media_15713404.png" alt="TikTok"></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__info">
+                    <p class="footer__text">
+                        〒460-0011
+                        塚本ビル 1階
+                        愛知県名古屋市中区大須 2丁目1-41 </p>
+                    <p class="footer__text">TEL：08036776262</p>
+
+                </div>
+                <small class="footer__copyright">za.colombo All Right Reserved</small>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+
+</html>

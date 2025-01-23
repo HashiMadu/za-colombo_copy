@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mainmenu_2</title>
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="header__inner">
+
+            <div class="header__contain">
+                <a href="./top.html"><img src="./image/yaka.svg" alt="ザ・コロンボ Logo" class="header__logo"></a>
+                <a href="./top.html">
+                    <h1 class="header__name">ザ。コロンボ</h1>
+                </a>
+            </div>
+
+
+            <nav class="header__nav">
+                <div class="header__langswitcher">
+                    <a href="" class="lang__enfrist">EN</a>
+                    <a href="" class="lang__jafrist">JA</a>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__headitem"><a href="./mainmenu_1.html">メニュー</a></li>
+                    <li class="nav__headitem"><a href="./shop.html">店について</a></li>
+                    <li class="nav__headitem"><a href="./description.html">詳細</a></li>
+                    <!-- <li class="nav__headitem"><a href="./contact.html">お問い合わせ</a></li> -->
+                </ul>
+            </nav>
+
+            <div class="toggle__btn">
+                <i class="fa-solid fa-bars fa-beat-fade" style="color: #ffcb0f;"></i>
+
+            </div>
+
+            <div class="dropdown__menu">
+                <ul>
+                    <li class="nav__headitem"><a href="./mainmenu_1.html">メニュー</a></li>
+                    <li class="nav__headitem"><a href="./">店について</a></li>
+                    <li class="nav__headitem"><a href="./description.html">詳細</a></li>
+                    <!-- <li class="nav__headitem"><a href="./contact.html">お問い合わせ</a></li> -->
+                    <li class="nav__header__item">
+                        <div class="header__lang-switcher">
+                            <a href="" class="lang__en">EN</a>
+                            <a href="" class="lang__ja">JA</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle__btn');
+        const toggleBtnIcon = document.querySelector('.toggle__btn i');
+        const dropDownMenu = document.querySelector('.dropdown__menu');
+
+        toggleBtn.onclick = function () {
+            // "onclick"
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark '
+                : 'fa-solid fa-bars'; // Change back to "bars" when menu is closed
+        };
+
+
+
+    </script>
+
+
+    <main>
+
+        <section class="menu">
+
+            <div class="menu__inner">
+                <div class="menu__fristview">
+
+                    <h2 class="menu__maintitle">Menu</h2>
+
+                    <nav class="nav__menu">
+                        <ul class="menu__listmenu">
+                            <li class="menu__item"><a href="./recommend.html">Recommend</a></li>
+                            <li class="menu__item"><a href="./mainmenu_1.html">Main Meal</a></li>
+                            <li class="menu__item"><a href="./sidedishes.html">Side Dishes</a></li>
+                            <li class="menu__item"><a href="./dessert.html">Dessert</a></li>
+                            <li class="menu__item"><a href="./drinks.html">Drinks</a></li>
+
+                        </ul>
+
+                    </nav>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="mainmenu">
+            <div class="mainmenu__inner">
+                <h2 class="mainmenu__maintitle">Main meal</h2>
+
+                <article class="mainmenu__item">
+                    <p class="mainmenu__number">8</p>
+                    <div class="mainmenu__content">
+                        <div class="mainmenu__info">
+                            <p class="mainmenu__minititle"> スリランカ麺類 </p>
+
+                            <h3 class="mainmenu__title">¥ 1200</h3>
+
+                            <p class="mainmenu__text">
+                                スリランカのヌードルは、野菜、スパイス、時には肉やシーフードと一緒に炒めた小麦のヌードルを使った人気の料理です。カレーパウダー、醤油、時にはココナッツミルクで調理し、スリランカ風の風味豊かな仕上がりになります。
+                            </p>
+                            <a class="btn" href="">使用スパイスの詳細</a>
+                        </div>
+                        <div class="mainmenu__image"><img src="./image/menu_main/menu_8.png" alt="">
+                        </div>
+
+
+                </article>
+
+
+                <article class="mainmenu__item">
+                    <p class="mainmenu__number">9</p>
+                    <div class="mainmenu__content">
+                        <div class="mainmenu__info">
+                            <p class="mainmenu__minititle">カップルセット</p>
+
+                            <h3 class="mainmenu__title">¥ 3200</h3>
+
+                            <p class="mainmenu__text">
+                                カップルセットは、通常2人分の特別な料理や食事で、さまざまな料理を一緒にシェアして楽しむことができるセットです。前菜、メインディッシュ、サイドディッシュなどが含まれ、バランスの取れた食事を提供することが多いです。
+                            </p>
+                            <a class="btn" href="">使用スパイスの詳細</a>
+
+                        </div>
+                        <div class="mainmenu__image"><img src="./image/menu_main/menu_9.png" alt="">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="mainmenu__item">
+                    <p class="mainmenu__number">10</p>
+                    <div class="mainmenu__content">
+                        <div class="mainmenu__info">
+                            <p class="mainmenu__minititle"> スペシルランチセット </p>
+
+                            <h3 class="mainmenu__title">¥ 1000</h3>
+
+                            <p class="mainmenu__text">
+                                スペシャルランチセットのライスとカレーは、ご飯とともに、肉、野菜、レンズ豆などのさまざまなカレーが提供される料理です。スパイシーで風味豊かな味わいが楽しめるバランスの取れた食事で、サンボルやピクルス、パパダムなどのサイドディッシュが添えられることが多いです。
+                            </p>
+                            <a class="btn" href="">使用スパイスの詳細</a>
+                        </div>
+                        <div class="mainmenu__image"><img src="./image/menu_main/menu_11.png" alt="">
+                        </div>
+                </article>
+
+                <article class="mainmenu__item">
+                    <p class="mainmenu__number">11</p>
+                    <div class="mainmenu__content">
+                        <div class="mainmenu__info">
+                            <p class="mainmenu__minititle">チョップスイライス</p>
+
+                            <h3 class="mainmenu__title">¥ 1400</h3>
+
+                            <p class="mainmenu__text">
+                                チョップスイライスは、炒めたご飯にさまざまな野菜を加え、肉やシーフードと一緒に調理した料理です。醤油、ニンニク、その他の調味料で風味付けされ、甘みと塩気が調和した味わいになります。カラフルな野菜（ニンジン、ピーマン、インゲンなど）を使い、風味豊かで満足感のある食事です。
+                            </p>
+                            <a class="btn" href="">使用スパイスの詳細</a>
+                        </div>
+                        <div class="mainmenu__image"><img src="./image/menu_main/menu_12.png" alt="">
+                        </div>
+                </article>
+
+                <article class="mainmenu__item">
+                    <p class="mainmenu__number">12</p>
+                    <div class="mainmenu__content">
+                        <div class="mainmenu__info">
+                            <p class="mainmenu__minititle">スペシャルラムプライス </p>
+
+                            <h3 class="mainmenu__title">¥ 1600</h3>
+
+                            <p class="mainmenu__text">
+                                スペシャルラムライスは、柔らかく風味豊かなラム肉を香り高いご飯と一緒に提供する料理です。ラム肉はシナモン、クローブ、カレーパウダーなどのスパイスで調理され、リッチで風味深い味わいになります。通常、野菜やサラダ、ソースなどのサイドディッシュが添えられ、バランスの取れた満足感のある食事です
+                            </p>
+                            <a class="btn" href="">使用スパイスの詳細</a>
+                        </div>
+                        <div class="mainmenu__image"><img src="./image/menu_main/menu_13.png" alt="">
+                        </div>
+                </article>
+
+                <article class="mainmenu__item">
+                    <p class="mainmenu__number">13</p>
+                    <div class="mainmenu__content">
+                        <div class="mainmenu__info">
+                            <p class="mainmenu__minititle">スリランかパラタセット </p>
+
+                            <h3 class="mainmenu__title">¥ 1600</h3>
+
+                            <p class="mainmenu__text">
+                                ふわふわでサクサクのパラタ、香り豊かな蒸しライスに風味豊かなサンボルを添えた一皿です。クリーミーなダールカレー、スパイシーな魚カレー、新鮮な野菜サラダがセットになり、満足感たっぷりのスリランカ料理を楽しめます。
+                            </p>
+                            <a class="btn" href="">使用スパイスの詳細</a>
+                        </div>
+                        <div class="mainmenu__image"><img src="./image/menu_main/menu_14.png" alt="">
+                        </div>
+                </article>
+
+                <article class="mainmenu__item">
+                    <p class="mainmenu__number">14</p>
+                    <div class="mainmenu__content">
+                        <div class="mainmenu__info">
+                            <p class="mainmenu__minititle">ストリングホッパーセット</p>
+
+                            <h3 class="mainmenu__title">¥ 1300</h3>
+
+                            <p class="mainmenu__text">
+                                バナナの葉の上にのせたストリングホッパー（米粉で作った蒸し麺）と風味豊かなチキンカレーのセットです。
+                            </p>
+                            <a class="btn" href="">使用スパイスの詳細</a>
+                        </div>
+                        <div class="mainmenu__image"><img src="./image/menu_main/menu_15.png" alt="">
+                        </div>
+                </article>
+
+            </div>
+
+
+            <div class="pagination">
+                <a class="side__one" href="./mainmenu_1.html">1</a>
+                <a class="side__two" href="./mainmenu_2.html">2</a>
+            </div>
+
+
+
+
+        </section>
+
+
+        <section class="map">
+            <div class="map__inner">
+                <h2 class="map__title">INFORMATION</h2>
+                <div class="map__details">
+
+                    <div class="map__left">
+                        <dl class="map__item">
+                            <dt class="map__name">場所</dt>
+                            <dd class="map__info">塚本ビル 1階
+                                愛知県名古屋市中区大須 2丁目1-41 460-0011</dd>
+                        </dl>
+                        <dl class="map__item">
+                            <dt class="map__name">営業時間</dt>
+                            <dd class="map__info">11 AM–11 PM</dd>
+                        </dl>
+                        <dl class="map__item">
+                            <dt class="map__name">定休日</dt>
+                            <dd class="map__info">月曜日</dd>
+                        </dl>
+                        <dl class="map__item">
+                            <dt class="map__name">駐車場</dt>
+                            <dd class="map__info">なし</dd>
+                        </dl>
+                    </div>
+
+
+                    <div class="map__right">
+                        <dl class="map__item">
+                            <dt class="map__name">アクセス</dt>
+                            <dd class="map__info">hdhsakdjsakdjsl</dd>
+                        </dl>
+
+                        <dl class="map__item">
+                            <dt class="map__name">総席数</dt>
+                            <dd class="map__info">12</dd>
+                        </dl>
+
+                        <dl class="map__item">
+                            <dt class="map__name">電子マネー</dt>
+                            <dd class="map__info">可</dd>
+                        </dl>
+
+                        <dl class="map__item">
+                            <dt class="map__name">クレジットカード</dt>
+                            <dd class="map__info">可</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="true__map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.796468695431!2d136.8985786!3d35.161696400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600377e702d4dae5%3A0x3839677d5c7d1571!2sZA%20COLOMBO!5e0!3m2!1sen!2sjp!4v1734690965229!5m2!1sen!2sjp"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+
+
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__main">
+                <div class="footer__contain">
+                    <h1 class="footer__name">ザ。コロンボ</h1>
+                    <hr class="footer__line"> <!-- Added horizontal line -->
+                    <img src="./image/yaka.svg" alt="ザ・コロンボ Logo" class="footer__logo">
+                </div>
+
+                <nav class="footer__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="./mainmenu_1.html">メニュー</a></li>
+                        <li class="nav__item"><a href="">店について</a></li>
+                        <li class="nav__item"><a href="./description.html">詳細</a></li>
+                        <!-- <li class="nav__item"><a href="">お問い合わせ</a></li> -->
+                    </ul>
+                </nav>
+
+                <nav class="icon__nav">
+                    <ul class="icon__list">
+                        <li class="icon__item"><a href=""><img src="./image/facebook_5968764.png" alt="Facebook"></a>
+                        </li>
+                        <li class="icon__item"><a href=""><img src="./image/instagram_2111463.png" alt="Instagram"></a>
+                        </li>
+                        <li class="icon__item"><a href=""><img src="./image/social-media_15713404.png" alt="TikTok"></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__info">
+                    <p class="footer__text">
+                        〒460-0011
+                        塚本ビル 1階
+                        愛知県名古屋市中区大須 2丁目1-41 </p>
+                    <p class="footer__text">TEL：08036776262</p>
+
+                </div>
+                <small class="footer__copyright">za.colombo All Right Reserved</small>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>

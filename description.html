@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>description</title>
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/the-new-css-reset/css/reset.min.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+        <div class="header__inner">
+
+
+            <div class="header__contain">
+                <a href="./top.html"><img src="./image/yaka.svg" alt="ザ・コロンボ Logo" class="header__logo"></a>
+                <a href="./top.html">
+                    <h1 class="header__name">ザ。コロンボ</h1>
+                </a>
+            </div>
+
+
+            <nav class="header__nav">
+                <div class="header__langswitcher">
+                    <a href="" class="lang__enfrist">EN</a>
+                    <a href="" class="lang__jafrist">JA</a>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__headitem"><a href="./mainmenu_1.html">メニュー</a></li>
+                    <li class="nav__headitem"><a href="./shop.html">店について</a></li>
+                    <li class="nav__headitem"><a href="./description.html">詳細</a></li>
+                    <!-- <li class="nav__headitem"><a href="./contact.html">お問い合わせ</a></li> -->
+                </ul>
+            </nav>
+
+            <div class="toggle__btn">
+                <i class="fa-solid fa-bars fa-beat-fade" style="color: #ffcb0f;"></i>
+
+            </div>
+
+            <div class="dropdown__menu">
+                <ul>
+                    <li class="nav__headitem"><a href="./mainmenu_1.html">メニュー</a></li>
+                    <li class="nav__headitem"><a href="./">店について</a></li>
+                    <li class="nav__headitem"><a href="./description.html">詳細</a></li>
+                    <!-- <li class="nav__headitem"><a href="./contact.html">お問い合わせ</a></li> -->
+                    <li class="nav__header__item">
+                        <div class="header__lang-switcher">
+                            <a href="" class="lang__en">EN</a>
+                            <a href="" class="lang__ja">JA</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </header>
+
+    <script>
+        const toggleBtn = document.querySelector('.toggle__btn');
+        const toggleBtnIcon = document.querySelector('.toggle__btn i');
+        const dropDownMenu = document.querySelector('.dropdown__menu');
+
+        toggleBtn.onclick = function () {
+            // "onclick"
+            dropDownMenu.classList.toggle('open');
+            const isOpen = dropDownMenu.classList.contains('open');
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark '
+                : 'fa-solid fa-bars'; // Change back to "bars" when menu is closed
+        };
+
+
+
+    </script>
+
+
+    <main>
+
+        <section class="des">
+
+            <div class="des__inner">
+                <div class="des__fristview">
+                </div>
+                <h2 class="des__sriname">SRI LANKA</h2>
+
+
+                <div class="des__srilanka">
+
+                    <div class="des__map">
+                        <img class="des__sriimage" src="image/des_map.png" alt="Map of Sri Lanka">
+                    </div>
+
+
+                    <div class="des__content">
+                        <p class="des_sritext">
+
+                            スリランカは、インド洋の「真珠」として知られる熱帯の島国で、自然の美しさと文化遺産に満ちています。緑豊かな茶畑や美しいビーチ、古代の寺院が点在し、スリランカは歴史、伝統、多様性が融合した魅力的な場所です。中央高地の茶園から沿岸の黄金色の砂浜まで、どこを見ても目を奪われる景色が広がります。
+                            <br>
+                            <br>
+                            スリランカの歴史は数千年前にさかのぼり、仏教や植民地支配、そして先住民の伝統が深く影響を与えています。その豊かな文化は祭りや音楽、ダンス、そしてもちろん料理に表れています。スリランカ料理は、エキゾチックなスパイス、新鮮なシーフード、多彩な食材を使い、香り高い味わいで人々を魅了します。温かく歓迎してくれる人々とともに、スリランカはインド洋の真珠として、訪れる人々に忘れがたい体験を提供する場所です。
+
+                        </p>
+                    </div>
+                </div>
+
+
+                <section class="mask__info">
+                    <h2 class="mask__name">ラクシャマスク: 精神と健康の守護者
+                    </h2>
+
+                    <div class="mask__content">
+
+
+                        <div class="mask__detail">
+                            <img class="mask__image" src="./image/yaka.svg" alt="">
+                            <p class="mask__text">
+                                ラクシャマスクは、スリランカの豊かな文化的および精神的遺産を象徴する印象的な存在です。伝統的な悪魔の舞踏や治療儀式で使用され、邪悪な精霊を追い払い、調和を取り戻すと信じられています。広がった目、鋭い牙、鮮やかな色など、力強く誇張された特徴を持つラクシャマスクは、邪悪な力を威圧し追い払うために作られています。<br>
+                                <br>
+                                古代の伝統に根ざしたラクシャマスクは、病気を治し、コミュニティを不運から守るために舞う悪魔の踊り手たちの激しくも守護的な力を表現しています。今日でも、これらのマスクはスリランカの芸術性と精神性を体現し、儀式的な道具であり、文化的な宝物として、世代を超えて受け継がれています。
+                            </p>
+                        </div>
+                        <div class="mask__dancer">
+                            <img src="./image/dancer _1.svg" alt="">
+
+                        </div>
+
+                </section>
+
+                <section class="ayu__info">
+
+                    <h2 class="ayu__name">スリランカのアーユルヴェーダ
+                    </h2>
+                    <p class="ayu__text">
+                        スリランカのアーユルヴェーダは、世界で最も古く、かつ最も包括的な伝統医学のシステムの一つで、何千年もの歴史を誇ります。古代の教えと実践に根ざし、身体、心、精神の調和を自然療法やライフスタイルの変化を通じて整えることに焦点を当てています。
+                    </p>
+                    <p class="ayu__text">
+                        健康と幸福は、三つのドーシャ（ヴァータ、ピッタ、カパ）の調和から生まれるという信念に基づき、スリランカのアーユルヴェーダは、ハーブ療法、マッサージ療法、食事の調整、そして解毒療法を組み合わせて、バランスを回復し維持します。
+                    </p>
+
+
+                    <p class="ayu__title">アーユルヴェーダがスリランカ料理に与える影響</p>
+                    <p class="ayu__text">
+                        スリランカのアーユルヴェーダでは、スパイスとハーブが料理の中心であり、風味を引き立てるだけでなく、バランスと消化の健康を促進するために使用されます。すべての食材は、身体の機能をサポートし、免疫力を強化し、調和の取れたドーシャのバランスを維持する能力に基づいて選ばれています。
+                    </p>
+
+                    <p class="ayu__title">
+
+                        アーユルヴェーダランチ体験
+                    </p>
+                    <p class="ayu__text">私たちのアーユルヴェーダランチ:
+                        スリランカミールセットは、伝統的なスリランカのアーユルヴェーダ料理の癒しの力をテーブルにお届けします。各セットは、栄養素と癒しの特性が豊富なバランスの取れた食事を提供するようにデザインされています。通常、この食事には以下が含まれています：
+                    </p>
+                    <nav class="ayu__list">
+                        <ul class="ayu__details">
+                            <li class="ayu__item">
+                                <active>ご飯:</active>
+                                消化を助け、エネルギーを高めるために、さまざまな野菜カレー、レンズ豆、そしてハーブを加えたおかゆ（例えば、コラケンダ）と一緒に提供されます。
+                            </li>
+                            <li class="ayu__item">
+                                <active>スパイス料理:</active>
+                                新鮮な野菜や豆類、ココナッツベースの果物と新鮮なハーブ:ドーシャのバランスを整え、全体的な健康を改善します。
+                            </li>
+                            <li class="ayu__item">ハーブドリンク:
+                                アーユルヴェーダでは、食後に体を浄化し、消化を改善するために、シナモン、ジンジャー、レモングラスを使ったスパイス入りの水やハーブティーがよく取り入れられます。</li>
+                            <li class="ayu__item">
+                                <active>果物と新鮮なハーブ:</active> 季節の果物や芳香のあるハーブが含まれ、冷却効果や解毒作用を持ち、食事の補完として、消化を助けます。
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="ayu__image">
+                        <img class="ayu__ginger" src="./image/ayu_1.jpeg" alt="">
+                        <img class="ayu__kolakada" src="./image/ayu_2.jpeg" alt="">
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+
+        <div id="spices__info">
+            <section class="spices">
+                <div class="spices__inner">
+                    <h2 class="spices__title">スリランカのスパイス</h2>
+                    <div class="spices__list">
+                        <article class="card">
+                            <img class="card__image " src="./image/spices/s_1.jpeg" alt="">
+                            <h3 class="card__name"> カリーリーブ (カラピンチャ)</h3>
+                            <p class="card__flavor">爽やかでわずかに苦味があり、柑橘系の香り。</p>
+                            <p class="card__benefit">🌿 消化を助け、血糖値を調整し、免疫力を高めます。
+                            </p>
+                        </article>
+                        <article class="card">
+                            <img class="card__image " src="./image/spices/s_2.jpg" alt="">
+                            <h3 class="card__name">ウコン (カハ)</h3>
+                            <p class="card__flavor">カリーやライス、スープに広く使われ、色と深みを加える。</p>
+                            <p class="card__benefit">
+                                炎症を抑え、肝臓の健康を促進し、免疫力を向上させます。
+                            </p>
+                        </article>
+                        <article class="card">
+                            <img class="card__image" src=" ./image/spices/s_3.jpg" alt="Cinnamon Stick or Powder">
+                            <h3 class="card__name">シナモン (クルンドゥ)</h3>
+                            <p class="card__flavor">甘く、温かく、わずかにスパイシー。</p>
+                            <p class="card__benefit">
+                                抗酸化作用が豊富で、血糖値の調整に役立ち、消化を助け、抗炎症作用があります。
+                            </p>
+                        </article>
+                        <article class="card">
+                            <img class="card__image" src=" ./image/spices/s_4.jpg" alt="">
+                            <h3 class="card__name">クローブ (カランブ)</h3>
+                            <p class="card__flavor">強い甘さと芳香、少しスパイシー</p>
+                            <p class="card__benefit">抗菌作用、抗炎症作用、鎮痛作用があり、口内の健康や消化促進に良いです</p>
+                        </article>
+                        <article class="card">
+                            <img class="card__image" src=" ./image/spices/s_5.jpeg" alt="">
+                            <h3 class="card__name">カルダモン / 小豆（アズキ）</h3>
+                            <p class="card__flavor">甘く、花のような香りで、わずかにスパイシー</p>
+                            <p class="card__benefit">消化を助け、吐き気を軽減し、膨満感を和らげ、抗炎症作用があります。</p>
+                        </article>
+                        <article class="card">
+                            <img class="card__image " src="./image/spices/s_6.jpeg" alt="">
+                            <h3 class="card__name">フェヌグリーク / メティ</h3>
+                            <p class="card__flavor">苦味があり、ナッツのような甘み</p>
+                            <p class="card__benefit">消化を改善し、炎症を抑え、血糖値のコントロールに役立ち、授乳中の母親の乳汁分泌を助けます。</p>
+                        </article>
+                        <article class="card">
+                            <img class="card__image " src="./image/spices/s_7.jpeg" alt="">
+                            <h3 class="card__name">マスタードシード / マスタードの種</h3>
+                            <p class="card__flavor">辛味があり、わずかに苦味</p>
+                            <p class="card__benefit">消化を助け、炎症を減らし、心臓の健康をサポートします。</p>
+                        </article>
+                        <article class="card">
+                            <img class="card__image " src="./image/spices/s_8.jpeg" alt="">
+                            <h3 class="card__name">チリ / 唐辛子, トウガラシ</h3>
+                            <p class="card__flavor">辛くて熱い、少し甘味も感じる</p>
+                            <p class="card__benefit">代謝を促進し、消化を助け、痛みを和らげ、ビタミンCと抗酸化物質が豊富です。</p>
+                        </article>
+                        <article class="card">
+                            <img class="card__image " src="./image/spices/s_9.jpeg" alt="">
+                            <h3 class="card__name">タマリンド / タマリンド</h3>
+                            <p class="card__flavor">酸味があり、甘みと酸味のバランスが取れた</p>
+                            <p class="card__benefit">消化を促進し、抗菌作用があり、体をデトックスするのに役立ちます。ビタミンやミネラルも豊富です。</p>
+                        </article>
+                        <article class="card">
+                            <img class="card__image " src="./image/spices/s_10.jpeg" alt="">
+                            <h3 class="card__name">ブラックペッパー / 黒胡椒, くろこしょう</h3>
+                            <p class="card__flavor">辛味があり、わずかに土っぽくて風味が豊か</p>
+                            <p class="card__benefit">消化を助け、抗酸化作用があり、体重管理をサポートし、食物の栄養吸収を高めます。</p>
+                        </article>
+                        <article class="card">
+                            <img class="card__image " src="./image/spices/s_11.jpeg" alt="">
+                            <h3 class="card__name">ランペ</h3>
+                            <p class="card__flavor">香り高い、土っぽい、わずかに甘い、</p>
+                            <p class="card__benefit">胃の不快感を和らげ、消化を促進します。</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+
+
+        <section class="map">
+            <div class="map__inner">
+                <h2 class="map__title">INFORMATION</h2>
+                <div class="map__details">
+
+                    <div class="map__left">
+                        <dl class="map__item">
+                            <dt class="map__name">場所</dt>
+                            <dd class="map__info">塚本ビル 1階
+                                愛知県名古屋市中区大須 2丁目1-41 460-0011</dd>
+                        </dl>
+                        <dl class="map__item">
+                            <dt class="map__name">営業時間</dt>
+                            <dd class="map__info">11 AM–11 PM</dd>
+                        </dl>
+                        <dl class="map__item">
+                            <dt class="map__name">定休日</dt>
+                            <dd class="map__info">月曜日</dd>
+                        </dl>
+                        <dl class="map__item">
+                            <dt class="map__name">駐車場</dt>
+                            <dd class="map__info">なし</dd>
+                        </dl>
+                    </div>
+
+
+                    <div class="map__right">
+                        <dl class="map__item">
+                            <dt class="map__name">アクセス</dt>
+                            <dd class="map__info">hdhsakdjsakdjsl</dd>
+                        </dl>
+
+                        <dl class="map__item">
+                            <dt class="map__name">総席数</dt>
+                            <dd class="map__info">12</dd>
+                        </dl>
+
+                        <dl class="map__item">
+                            <dt class="map__name">電子マネー</dt>
+                            <dd class="map__info">可</dd>
+                        </dl>
+
+                        <dl class="map__item">
+                            <dt class="map__name">クレジットカード</dt>
+                            <dd class="map__info">可</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="true__map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.796468695431!2d136.8985786!3d35.161696400000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600377e702d4dae5%3A0x3839677d5c7d1571!2sZA%20COLOMBO!5e0!3m2!1sen!2sjp!4v1734690965229!5m2!1sen!2sjp"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+
+
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__main">
+                <div class="footer__contain">
+                    <h1 class="footer__name">ザ。コロンボ</h1>
+                    <hr class="footer__line"> <!-- Added horizontal line -->
+                    <img src="./image/yaka.svg" alt="ザ・コロンボ Logo" class="footer__logo">
+                </div>
+
+                <nav class="footer__nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="./mainmenu_1.html">メニュー</a></li>
+                        <li class="nav__item"><a href="">店について</a></li>
+                        <li class="nav__item"><a href="./description.html">詳細</a></li>
+                        <!-- <li class="nav__item"><a href="">お問い合わせ</a></li> -->
+                    </ul>
+                </nav>
+
+                <nav class="icon__nav">
+                    <ul class="icon__list">
+                        <li class="icon__item"><a href=""><img src="./image/facebook_5968764.png" alt="Facebook"></a>
+                        </li>
+                        <li class="icon__item"><a href=""><img src="./image/instagram_2111463.png" alt="Instagram"></a>
+                        </li>
+                        <li class="icon__item"><a href=""><img src="./image/social-media_15713404.png" alt="TikTok"></a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="footer__info">
+                    <p class="footer__text">
+                        〒460-0011
+                        塚本ビル 1階
+                        愛知県名古屋市中区大須 2丁目1-41 </p>
+                    <p class="footer__text">TEL：08036776262</p>
+
+                </div>
+                <small class="footer__copyright">za.colombo All Right Reserved</small>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+
+</html>
